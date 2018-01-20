@@ -6,13 +6,19 @@
   font-weight: bold;
   font-size: $l-size;
   width: 100%;
-  margin-bottom: $xl-size;
+  margin-bottom: $m-size;
   padding-bottom: 2.4rem;
   padding-top: 2.4rem;
 }
 
 .big-button:disabled {
   opacity: 0.5;
+}
+
+@media (min-width: $breakpoint) {
+  .big-button {
+    margin-bottom: $xl-size;
+  }
 }
 
 .button {
